@@ -1,0 +1,37 @@
+//backgroundimg
+@mixin backGround($src,$size,$repeat) {
+    background-image: url($src);
+    background-size: $size;
+    background-repeat: $repeat;
+}
+//fontstyle
+@mixin fontStyle ($fontSize,$fontWeight,$fontFamily){
+    font-size: $fontSize;
+    line-height:$fontSize * 1.42857; //line-height = font-size * 1.42857
+    font-weight:$fontWeight;
+    font-family: $fontFamily;
+}
+//fontface(define fonts)
+@mixin fontFace($fontFamily,$src) {
+    @font-face {
+        font-family:$fontFamily;
+        src: url($src);
+    }
+}
+//btn proberties
+@mixin button($colorBtn ,$bg-color) {
+    padding: 0.75rem 1.75rem;
+    color: $colorBtn;
+    background-color: $bg-color;
+   
+}
+//button hover
+@mixin buttonHover($colorBtnHover,$bg-colorHover) {
+    @include button($colorBtnHover ,$bg-colorHover);
+}
+@include fontFace('OpenSans-Regular','assets/fonts/OpenSans-Regular.ttf');
+%txt-uppercase{text-transform: uppercase;}
+
+
+
+
