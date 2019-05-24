@@ -1,0 +1,16 @@
+<section id="brands" class="my-5 py-3 bg-primaryColor">
+    <div class="container">
+        <owl-carousel [options]="carouselOptions" [items]="brands" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+              <div class="item text-center py-3" *ngFor="let image of brands;let i= index">
+                 <img class="slide-image" src="{{image}}" class="img-fluid">
+              </div>
+       </owl-carousel>
+      <!-- <div class="row align-items-center" >
+        <div class="col-12 col-md-2 text-center py-3" *ngFor="let item of brands ;let i=index"> -->
+            <!-- <div class="position-relative parent-overlay"> -->
+                <!-- <img src="{{item}}" alt="{{i}}" class="img-fluid"> -->
+            <!-- </div> -->
+        <!-- </div>
+      </div> -->
+    </div>
+  </section>

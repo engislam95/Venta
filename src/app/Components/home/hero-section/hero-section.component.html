@@ -1,0 +1,36 @@
+<section class="heroBgImg">
+  <!-- <img src="assets/img/BackGround/headerBg-1.svg" alt="" class="img-fluid"> -->
+<div class="container">
+  <div class="row">
+    <app-nav></app-nav>
+  </div>
+  <div class="row" >
+ 
+      <div class="container">
+
+          <owl-carousel [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+           <div class="item row align-items-center" *ngFor="let image of images;let i= index">
+              <div class="slide-text">
+                  <div class="col props" >
+                      <h1>
+                        <span>{{image.h1Text1}} </span> 
+                        {{image.h1Text2}}
+                      </h1> 
+                      <p >{{image.text}}</p>
+                      <button>{{image.btnText}}</button>
+                  </div>
+             </div>
+             <div class=" offset-sm-2 col-sm-2">
+              <img class="slide-image" src="{{image.image}}"  >
+             </div>
+            
+           </div>
+          
+         </owl-carousel>
+        </div>
+  </div>
+
+
+</div>
+
+</section>

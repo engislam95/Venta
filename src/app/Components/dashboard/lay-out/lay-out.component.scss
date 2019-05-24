@@ -1,0 +1,33 @@
+@import "../../../../assets/sass/variables";
+@import "../../../../assets/sass/mixins";
+#layout-dashboard{
+    box-shadow: 8px 8px 20px 10px #f4f4f4,-1px -1px 10px 5px #f4f4f4ad;
+    .icon{
+        border-right:  .75rem solid $primaryColor;
+        border-left:  .75rem solid $primaryColor;
+    }
+    .active{
+        border-left:  .75rem solid $secondaryColor;
+    }
+    a.profile{
+        margin: 2.5rem 0 2rem;
+        width: 7rem;
+        height: 7rem;
+        line-height: 7rem;
+        border-radius: 50%;
+        display: block;
+        background-color: #fad105;
+        transform: translateX(-2.7rem);
+    }
+    .itemSec{
+        a{
+            display: block;
+            background-color: white;
+            padding: .5rem 0;
+            margin: .5rem 0;
+            text-decoration: none;
+            color: $paragraphGrey;
+            @include fontStyle (14px,600,'Segoe-UI')
+        }
+    }
+}
