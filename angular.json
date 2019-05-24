@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "Venta": {
+=======
+    "frontEnd": {
+>>>>>>> home-dashboard
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +21,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/Venta",
+=======
+            "outputPath": "dist/frontEnd",
+>>>>>>> home-dashboard
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,9 +35,24 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.scss"
             ],
             "scripts": [],
+=======
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/owl.carousel/dist/assets/owl.carousel.css",
+              "node_modules/owl.carousel/dist/assets/owl.theme.default.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/owl.carousel/dist/owl.carousel.min.js",
+              "node_modules/bootstrap/dist/js/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
+              
+>>>>>>> home-dashboard
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -62,18 +85,30 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "Venta:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "Venta:build:production"
+=======
+            "browserTarget": "frontEnd:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "frontEnd:build:production"
+>>>>>>> home-dashboard
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "Venta:build"
+=======
+            "browserTarget": "frontEnd:build"
+>>>>>>> home-dashboard
           }
         },
         "test": {
@@ -107,7 +142,11 @@
         }
       }
     },
+<<<<<<< HEAD
     "Venta-e2e": {
+=======
+    "frontEnd-e2e": {
+>>>>>>> home-dashboard
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -116,11 +155,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
+<<<<<<< HEAD
             "devServerTarget": "Venta:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "Venta:serve:production"
+=======
+            "devServerTarget": "frontEnd:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "frontEnd:serve:production"
+>>>>>>> home-dashboard
             }
           }
         },
@@ -136,5 +183,9 @@
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "Venta"
+=======
+  "defaultProject": "frontEnd"
+>>>>>>> home-dashboard
 }

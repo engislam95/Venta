@@ -1,0 +1,48 @@
+h2{
+    color:#2d81ca;
+
+}
+#triangle-topleft { 
+    width: 0;
+    height: 0;
+    border-top: 304px solid #2d81ca;
+    border-right: 146px solid transparent;
+    display: inline;
+    position: relative;
+    top: 300px;
+}
+.imgContainer{
+    padding:170px 0px;
+}
+.circle { 
+    width: 140px;
+    height: 140px;
+    border:2px solid #fad105;
+    -moz-border-radius: 70px; 
+    -webkit-border-radius: 70px; 
+    border-radius: 70px;
+    position: absolute;
+    bottom:80px;
+    left:100px;
+ }
+ .magic{
+     display: none;
+ }
+figure{
+    position: relative;
+    h5{
+        color:#fad105;
+    }
+    span{
+        text-decoration: line-through;
+        color:red;
+    }
+    &:hover { transform: scale(1.5); 
+        &>div{
+            display: block;
+        }
+
+    }
+    
+    
+}

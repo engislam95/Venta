@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 *{
+=======
+*,::after,::before{
+>>>>>>> home-dashboard
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,13 +13,17 @@ html{
 }
 a{
     text-decoration: none;
+<<<<<<< HEAD
     @extend %txt-uppercase; 
+=======
+>>>>>>> home-dashboard
 }
 ul{
     list-style-type: none;
 }
 input,textarea{transition: border-color 1s ease-in-out,box-shadow 1s ease-in-out !important;}
 h1{
+<<<<<<< HEAD
     @include fontStyle ($fontSize-h1,600,'OpenSans-Regular');
 }
 h2{
@@ -33,6 +41,33 @@ p{
 button{
     @include button( $BtnFontColor,$primaryColor );
     transition: color 0.2s ease-in-out, background-color  0.6s ease-in-out;
+=======
+    @include fontStyle ($fontSize-h1,600,'Segoe-UI');
+}
+h2{
+    @include fontStyle ($fontSize-h2,600,'Segoe-UI');
+    @extend %txt-uppercase;
+    color: $primaryColor;
+}
+h3{
+    @include fontStyle ($fontSize-h3,600,'Segoe-UI');
+}
+h4{
+    @include fontStyle ($fontSize-h4,600,'OpenSans-Regular');  
+    color: $paragraphGrey;
+}
+p{
+    @include fontStyle ($fontSize-p,600,'OpenSans-Regular');
+    color: $paragraphGrey;
+}
+button{
+    @include button( $BtnFontColor,$primaryColor );
+    padding: 0.5rem 3rem;
+    border: none;
+    border-radius: 35px !important;
+    transition: color 0.2s ease-in-out, background-color  0.6s ease-in-out;
+    &:hover{outline: none;}
+>>>>>>> home-dashboard
 }
 .over-lay{
     position: absolute;
@@ -42,6 +77,28 @@ button{
     width: 100%;
     height: 100%;   
 }
+<<<<<<< HEAD
+=======
+.color-secondaryColor{
+    color:$secondaryColor;
+}
+.color-primaryColor{
+    color:$primaryColor;
+}
+.bg-primaryColor{
+    background-color: $primaryColor
+}
+.bg-LightGrey{
+    background-color: $bgLightGrey
+}
+
+.font-bold{
+    font-weight: bold;
+}
+.bg-img{
+    @include backGround('assets/img/BackGround/headerBg-1.svg',cover,no-repeat)
+}
+>>>>>>> home-dashboard
 /*Media*/
 @media screen and ( max-width: 576px)  { //Small display scales
     html{

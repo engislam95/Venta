@@ -1,0 +1,17 @@
+<section id="mew-arrival">
+  <div class="container">
+    <div class="row justify-content-center">
+      <h2 class="mb-4"><span class="bold">new</span> arrival</h2>
+    </div>
+    <div class="row " >
+      <div class="col-12 col-md-4 text-center py-3" *ngFor="let item of gallery ;let i=index">
+          <div class="position-relative parent-overlay">
+              <img src="{{item}}" alt="{{i}}" class="rounded" >
+              <div class="over-lay d-none justify-content-center align-items-center">
+                <p class="initialism mb-0">view details</p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>

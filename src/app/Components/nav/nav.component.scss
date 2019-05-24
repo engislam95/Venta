@@ -1,0 +1,18 @@
+// @import "../assets/sass/variables";
+// @import "../assets/sass/mixins";
+// @import "../assets/sass/base";
+
+nav{
+    li{
+        color:#d0d0d0;
+    }
+    .Links{
+        li{
+            margin-right: 40px;
+            &:last-child{
+                margin-right: 500px;
+            }
+        }
+       
+    }
+}

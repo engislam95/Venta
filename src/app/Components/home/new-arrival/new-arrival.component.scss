@@ -1,0 +1,20 @@
+#mew-arrival{
+    .bold{
+        font-weight: bold;
+    }
+    .parent-overlay{
+        transition: all .7s ease-in-out;
+        img{
+            width: 100%;
+        }
+        .initialism{
+            color: white;
+        }
+        &:hover{
+            box-shadow:0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+            .over-lay{
+               display: flex !important;
+           }
+       } 
+    }
+}
